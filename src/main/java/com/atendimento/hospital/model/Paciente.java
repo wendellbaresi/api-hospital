@@ -15,7 +15,7 @@ public class Paciente {
     private String nome;
 
     @Column
-    private Date data_nascimento;
+    private LocalDateTime data_nascimento;
 
     @Column
     private String cpf;
@@ -67,11 +67,11 @@ public class Paciente {
         this.nome = nome;
     }
 
-    public Date getData_nascimento() {
+    public LocalDateTime getData_nascimento() {
         return data_nascimento;
     }
 
-    public void setData_nascimento(Date data_nascimento) {
+    public void setData_nascimento(LocalDateTime data_nascimento) {
         this.data_nascimento = data_nascimento;
     }
 
