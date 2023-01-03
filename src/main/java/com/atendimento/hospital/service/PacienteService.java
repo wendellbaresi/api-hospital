@@ -38,16 +38,17 @@ public class PacienteService {
 
         if (paciente.getNivel_dor() == 0){
             paciente.setAlta(true);
+            paciente.setMedicacao(null);
         }
-        else if (paciente.getNivel_dor() == 1 && paciente.getNivel_dor() == 2){
+        else if (paciente.getNivel_dor() == 1 || paciente.getNivel_dor() == 2){
             paciente.setMedicacao(medicacao1);
-        } else if (paciente.getNivel_dor() == 3 && paciente.getNivel_dor() ==4) {
+        } else if (paciente.getNivel_dor() == 3 || paciente.getNivel_dor() ==4) {
             paciente.setMedicacao(medicacao2);
             paciente.setAlta(false);
-        } else if (paciente.getNivel_dor() == 5 && paciente.getNivel_dor() == 6){
+        } else if (paciente.getNivel_dor() == 5 || paciente.getNivel_dor() == 6){
             paciente.setMedicacao(medicacao3);
             paciente.setAlta(false);
-        } else if (paciente.getNivel_dor() == 7 && paciente.getNivel_dor() == 8) {
+        } else if (paciente.getNivel_dor() == 7 || paciente.getNivel_dor() == 8) {
             paciente.setMedicacao(medicacao4);
             paciente.setAlta(false);
         } else if (paciente.getNivel_dor() == 9){
